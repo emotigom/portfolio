@@ -1,276 +1,316 @@
 <!doctype html>
 <html lang="ko">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>안상균 | Education Tech & AI Portfolio</title>
-  <meta name="description" content="교육 현장 경험과 웹 개발, AI/데이터 분석을 연결하는 안상균의 포트폴리오입니다." />
-  <meta property="og:title" content="안상균 | Education Tech & AI Portfolio" />
-  <meta property="og:description" content="교육 SaaS, AI/데이터 분석, AWS 기반 웹 서비스 프로젝트 포트폴리오" />
-  <meta property="og:type" content="website" />
-  <link rel="stylesheet" href="./styles.css" />
-</head>
-<body>
-  <header class="site-header">
-    <a class="brand" href="#top" aria-label="홈으로 이동">
-      <span class="brand-mark">A</span>
-      <span>AHN SANGKYOON</span>
-    </a>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>안상균 | Education Tech & AI Portfolio</title>
+    <meta
+      name="description"
+      content="교육 현장 경험과 웹 개발, AI/데이터 분석을 연결하는 안상균의 포트폴리오입니다."
+    />
+    <meta
+      property="og:title"
+      content="안상균 | Education Tech & AI Portfolio"
+    />
+    <meta
+      property="og:description"
+      content="교육 SaaS, AI/데이터 분석, AWS 기반 웹 서비스 프로젝트 포트폴리오"
+    />
+    <meta property="og:type" content="website" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="홈으로 이동">
+        <span class="brand-mark">A</span>
+        <span>AHN SANGKYOON</span>
+      </a>
 
-    <nav class="nav" aria-label="주요 메뉴">
-      <a href="#projects">Projects</a>
-      <a href="#strengths">Strengths</a>
-      <a href="#timeline">Timeline</a>
-      <a href="#contact">Contact</a>
-    </nav>
+      <nav class="nav" aria-label="주요 메뉴">
+        <a href="#projects">Projects</a>
+        <a href="#strengths">Strengths</a>
+        <a href="#timeline">Timeline</a>
+        <a href="#contact">Contact</a>
+      </nav>
 
-    <button class="theme-toggle" type="button" aria-label="테마 전환">☾</button>
-  </header>
+      <button class="theme-toggle" type="button" aria-label="테마 전환">
+        ☾
+      </button>
+    </header>
 
-  <main id="top">
-    <section class="hero section">
-      <div class="hero-copy">
-        <p class="eyebrow">Education Tech · AI · Web Product Builder</p>
-        <h1>
-          교육 현장의 문제를<br />
-          <span>작동하는 웹 서비스</span>로 바꿉니다.
-        </h1>
-        <p class="hero-text">
-          강의 경험, 데이터 분석, 클라우드 기반 개발을 연결해
-          교사와 학생이 실제로 쓰기 쉬운 도구를 만드는 포트폴리오입니다.
-        </p>
-        <div class="hero-actions">
-          <a class="button primary" href="#projects">프로젝트 보기</a>
-          <a class="button ghost" href="#contact">연락하기</a>
-        </div>
-      </div>
-
-      <aside class="hero-card" aria-label="요약 카드">
-        <div class="status-pill">Available for collaboration</div>
-        <h2>현재 관심 분야</h2>
-        <ul>
-          <li>교사용 공유보드 / 수업 대시보드</li>
-          <li>AI 기반 교육 콘텐츠와 자동화</li>
-          <li>헬스케어 데이터 분석 및 예측 모델</li>
-          <li>AWS · Next.js 기반 제품 개발</li>
-        </ul>
-      </aside>
-    </section>
-
-    <section class="section intro-grid">
-      <article class="intro-card">
-        <span class="number">01</span>
-        <h2>교육 경험</h2>
-        <p>
-          영어·코딩 강의 경험을 바탕으로, 수업 현장에서 교사와 학생이 겪는
-          불편을 제품 요구사항으로 바꾸는 데 강점이 있습니다.
-        </p>
-      </article>
-      <article class="intro-card">
-        <span class="number">02</span>
-        <h2>제품 개발</h2>
-        <p>
-          Next.js, TypeScript, AWS, 인증·스토리지·대시보드 구조를 조합해
-          실제 배포 가능한 웹 서비스를 설계하고 개선합니다.
-        </p>
-      </article>
-      <article class="intro-card">
-        <span class="number">03</span>
-        <h2>AI / 데이터</h2>
-        <p>
-          머신러닝 실험, 제출 결과 분석, 피처 엔지니어링, 리포트 정리까지
-          연구 과정을 끝까지 추적하고 개선하는 방식으로 접근합니다.
-        </p>
-      </article>
-    </section>
-
-    <section id="projects" class="section">
-      <div class="section-heading">
-        <p class="eyebrow">Selected Work</p>
-        <h2>대표 프로젝트</h2>
-      </div>
-
-      <div class="project-grid">
-        <article class="project-card featured">
-          <div class="project-topline">
-            <span class="tag">Product</span>
-            <span class="tag">Next.js</span>
-            <span class="tag">Education</span>
-          </div>
-          <h3>Gomdory / Gomboard</h3>
-          <p>
-            교사를 위한 공유보드, 학생 참여 화면, 수업 대시보드, 파일 업로드,
-            QR·단축코드 입장 흐름을 갖춘 교육용 웹 서비스입니다.
+    <main id="top">
+      <section class="hero section">
+        <div class="hero-copy">
+          <p class="eyebrow">Education Tech · AI · Web Product Builder</p>
+          <h1>
+            교육 현장의<br />
+            문제를
+            <span>작동하는 웹 서비스</span>로 바꿉니다.
+          </h1>
+          <p class="hero-text">
+            강의 경험, 데이터 분석, 클라우드 기반 개발을 연결해 교사와 학생이
+            실제로 쓰기 쉬운 도구를 만드는 포트폴리오입니다.
           </p>
-          <ul class="project-points">
-            <li>학생용 공개 접속 경로와 교사용 관리 화면 분리</li>
-            <li>보드·섹션·카드 기반 수업 참여 UX 개선</li>
-            <li>Next.js App Router, TypeScript, Tailwind 기반</li>
-          </ul>
-        </article>
-
-        <article class="project-card">
-          <div class="project-topline">
-            <span class="tag">AI</span>
-            <span class="tag">Data</span>
+          <div class="hero-actions">
+            <a class="button primary" href="#projects">프로젝트 보기</a>
+            <a class="button ghost" href="#contact">연락하기</a>
           </div>
-          <h3>헬스케어 예측 모델 연구</h3>
-          <p>
-            난임 환자 대상 예측 모델 개선을 위해 전처리, 피처 설계,
-            앙상블, 제출 결과 해석, README 정리까지 수행한 데이터 분석 프로젝트입니다.
-          </p>
-          <ul class="project-points">
-            <li>결측 처리 전략과 도메인 기반 flag 설계</li>
-            <li>OOF·public score 기반 제출 후보 비교</li>
-            <li>재현 가능한 실험 기록과 보고서 정리</li>
-          </ul>
-        </article>
-
-        <article class="project-card">
-          <div class="project-topline">
-            <span class="tag">AWS</span>
-            <span class="tag">Cloud</span>
-          </div>
-          <h3>Teacher Paddle</h3>
-          <p>
-            교사용 수업 운영 도구를 목표로 Cognito 인증, API Gateway,
-            Lambda, DynamoDB, S3 업로드 구조를 실험하고 설계한 장기 프로젝트입니다.
-          </p>
-          <ul class="project-points">
-            <li>Cognito 기반 로그인과 JWT 인증 API 구성</li>
-            <li>보드 생성·단축코드·교사별 데이터 구조 설계</li>
-            <li>Amplify·CloudFront 배포 흐름 검토</li>
-          </ul>
-        </article>
-
-        <article class="project-card">
-          <div class="project-topline">
-            <span class="tag">Creative Coding</span>
-            <span class="tag">3D</span>
-          </div>
-          <h3>3D / 교육형 인터랙션 실험</h3>
-          <p>
-            Scratch·Entry·Three.js·3D 미로·시각화 실험을 통해
-            초보 학습자도 이해하기 쉬운 인터랙티브 수업 자료를 기획했습니다.
-          </p>
-          <ul class="project-points">
-            <li>Scratch 기반 3D 미로 수업 설계</li>
-            <li>Chrome Music Lab 활용 AI 체험 수업 기획</li>
-            <li>Three.js 기반 시각화 프로젝트 경험</li>
-          </ul>
-        </article>
-      </div>
-    </section>
-
-    <section id="strengths" class="section split-section">
-      <div>
-        <p class="eyebrow">Core Strengths</p>
-        <h2>제가 잘하는 일</h2>
-        <p class="section-lead">
-          단순히 코드를 짜는 것보다, “왜 이 기능이 필요한가”를 수업 현장과 사용자 입장에서
-          다시 묻고 제품으로 정리하는 쪽에 강점이 있습니다.
-        </p>
-      </div>
-
-      <div class="skill-list">
-        <div class="skill-item">
-          <h3>제품 기획 → 개발 연결</h3>
-          <p>현장 문제를 기능 요구사항, 화면 구조, 테스트 항목으로 바꿉니다.</p>
         </div>
-        <div class="skill-item">
-          <h3>끈질긴 문제 해결</h3>
-          <p>빌드 실패, 배포 오류, 인증 문제, 데이터 실험 실패를 기록하며 끝까지 좁혀갑니다.</p>
+
+        <aside class="hero-card" aria-label="요약 카드">
+          <div class="status-pill">Available for collaboration</div>
+          <h2>현재 관심 분야</h2>
+          <ul>
+            <li>교사용 공유보드 / 수업 대시보드</li>
+            <li>AI 기반 교육 콘텐츠와 자동화</li>
+            <li>헬스케어 데이터 분석 및 예측 모델</li>
+            <li>AWS · Next.js 기반 제품 개발</li>
+          </ul>
+        </aside>
+      </section>
+
+      <section class="section intro-grid">
+        <article class="intro-card">
+          <span class="number">01</span>
+          <h2>교육 경험</h2>
+          <p>
+            영어·코딩 강의 경험을 바탕으로, 수업 현장에서 교사와 학생이 겪는
+            불편을 제품 요구사항으로 바꾸는 데 강점이 있습니다.
+          </p>
+        </article>
+        <article class="intro-card">
+          <span class="number">02</span>
+          <h2>제품 개발</h2>
+          <p>
+            Next.js, TypeScript, AWS, 인증·스토리지·대시보드 구조를 조합해 실제
+            배포 가능한 웹 서비스를 설계하고 개선합니다.
+          </p>
+        </article>
+        <article class="intro-card">
+          <span class="number">03</span>
+          <h2>AI / 데이터</h2>
+          <p>
+            머신러닝 실험, 제출 결과 분석, 피처 엔지니어링, 리포트 정리까지 연구
+            과정을 끝까지 추적하고 개선하는 방식으로 접근합니다.
+          </p>
+        </article>
+      </section>
+
+      <section id="projects" class="section">
+        <div class="section-heading">
+          <p class="eyebrow">Selected Work</p>
+          <h2>대표 프로젝트</h2>
         </div>
-        <div class="skill-item">
-          <h3>교육자 관점의 UX</h3>
-          <p>교사·학생·기관 사용자가 실제로 부담 없이 쓸 수 있는 흐름을 우선합니다.</p>
+
+        <div class="project-grid">
+          <article class="project-card featured">
+            <div class="project-topline">
+              <span class="tag">Product</span>
+              <span class="tag">Next.js</span>
+              <span class="tag">Education</span>
+            </div>
+            <h3>Gomdory / Gomboard</h3>
+            <p>
+              교사를 위한 공유보드, 학생 참여 화면, 수업 대시보드, 파일 업로드,
+              QR·단축코드 입장 흐름을 갖춘 교육용 웹 서비스입니다.
+            </p>
+            <ul class="project-points">
+              <li>학생용 공개 접속 경로와 교사용 관리 화면 분리</li>
+              <li>보드·섹션·카드 기반 수업 참여 UX 개선</li>
+              <li>Next.js App Router, TypeScript, Tailwind 기반</li>
+            </ul>
+          </article>
+
+          <article class="project-card">
+            <div class="project-topline">
+              <span class="tag">AI</span>
+              <span class="tag">Data</span>
+            </div>
+            <h3>헬스케어 예측 모델 연구</h3>
+            <p>
+              난임 환자 대상 예측 모델 개선을 위해 전처리, 피처 설계, 앙상블,
+              제출 결과 해석, README 정리까지 수행한 데이터 분석 프로젝트입니다.
+            </p>
+            <ul class="project-points">
+              <li>결측 처리 전략과 도메인 기반 flag 설계</li>
+              <li>OOF·public score 기반 제출 후보 비교</li>
+              <li>재현 가능한 실험 기록과 보고서 정리</li>
+            </ul>
+          </article>
+
+          <article class="project-card">
+            <div class="project-topline">
+              <span class="tag">AWS</span>
+              <span class="tag">Cloud</span>
+            </div>
+            <h3>Teacher Paddle</h3>
+            <p>
+              교사용 수업 운영 도구를 목표로 Cognito 인증, API Gateway, Lambda,
+              DynamoDB, S3 업로드 구조를 실험하고 설계한 장기 프로젝트입니다.
+            </p>
+            <ul class="project-points">
+              <li>Cognito 기반 로그인과 JWT 인증 API 구성</li>
+              <li>보드 생성·단축코드·교사별 데이터 구조 설계</li>
+              <li>Amplify·CloudFront 배포 흐름 검토</li>
+            </ul>
+          </article>
+
+          <article class="project-card">
+            <div class="project-topline">
+              <span class="tag">Creative Coding</span>
+              <span class="tag">3D</span>
+            </div>
+            <h3>3D / 교육형 인터랙션 실험</h3>
+            <p>
+              Scratch·Entry·Three.js·3D 미로·시각화 실험을 통해 초보 학습자도
+              이해하기 쉬운 인터랙티브 수업 자료를 기획했습니다.
+            </p>
+            <ul class="project-points">
+              <li>Scratch 기반 3D 미로 수업 설계</li>
+              <li>Chrome Music Lab 활용 AI 체험 수업 기획</li>
+              <li>Three.js 기반 시각화 프로젝트 경험</li>
+            </ul>
+          </article>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section class="section stack-section">
-      <div class="section-heading">
-        <p class="eyebrow">Tech Stack</p>
-        <h2>사용 기술</h2>
-      </div>
-      <div class="stack-cloud" aria-label="기술 스택">
-        <span>Next.js</span>
-        <span>TypeScript</span>
-        <span>React</span>
-        <span>Tailwind CSS</span>
-        <span>AWS</span>
-        <span>Cognito</span>
-        <span>Lambda</span>
-        <span>DynamoDB</span>
-        <span>S3</span>
-        <span>Python</span>
-        <span>Pandas</span>
-        <span>LightGBM</span>
-        <span>GitHub</span>
-        <span>Vercel</span>
-      </div>
-    </section>
+      <section id="strengths" class="section split-section">
+        <div>
+          <p class="eyebrow">Core Strengths</p>
+          <h2>제가 잘하는 일</h2>
+          <p class="section-lead">
+            단순히 코드를 짜는 것보다, “왜 이 기능이 필요한가”를 수업 현장과
+            사용자 입장에서 다시 묻고 제품으로 정리하는 쪽에 강점이 있습니다.
+          </p>
+        </div>
 
-    <section id="timeline" class="section timeline-section">
-      <div class="section-heading">
-        <p class="eyebrow">Journey</p>
-        <h2>작업 흐름</h2>
-      </div>
-
-      <ol class="timeline">
-        <li>
-          <span class="time">Teaching</span>
-          <div>
-            <h3>교육 현장 경험</h3>
-            <p>영어·코딩 수업을 진행하며 교사와 학생이 실제로 필요로 하는 도구를 관찰했습니다.</p>
+        <div class="skill-list">
+          <div class="skill-item">
+            <h3>제품 기획 → 개발 연결</h3>
+            <p>
+              현장 문제를 기능 요구사항, 화면 구조, 테스트 항목으로 바꿉니다.
+            </p>
           </div>
-        </li>
-        <li>
-          <span class="time">Build</span>
-          <div>
-            <h3>웹 서비스 제작</h3>
-            <p>공유보드, 대시보드, 학생 접속 경로, 파일 업로드 등 교육 SaaS 기능을 구현해왔습니다.</p>
+          <div class="skill-item">
+            <h3>끈질긴 문제 해결</h3>
+            <p>
+              빌드 실패, 배포 오류, 인증 문제, 데이터 실험 실패를 기록하며
+              끝까지 좁혀갑니다.
+            </p>
           </div>
-        </li>
-        <li>
-          <span class="time">Analyze</span>
-          <div>
-            <h3>AI·데이터 분석</h3>
-            <p>예측 모델 실험과 제출 결과 분석을 통해 근거 있는 개선 루프를 쌓고 있습니다.</p>
+          <div class="skill-item">
+            <h3>교육자 관점의 UX</h3>
+            <p>
+              교사·학생·기관 사용자가 실제로 부담 없이 쓸 수 있는 흐름을
+              우선합니다.
+            </p>
           </div>
-        </li>
-        <li>
-          <span class="time">Next</span>
-          <div>
-            <h3>더 쓰기 쉬운 교육 제품</h3>
-            <p>교사에게는 가볍고, 학생에게는 직관적인 수업 참여 도구를 목표로 개선 중입니다.</p>
-          </div>
-        </li>
-      </ol>
-    </section>
+        </div>
+      </section>
 
-    <section id="contact" class="section contact-section">
-      <div>
-        <p class="eyebrow">Contact</p>
-        <h2>함께 만들고 싶은 일이 있다면 연락 주세요.</h2>
-        <p>
-          교육 기술, AI 활용 수업, 데이터 분석, 웹 서비스 제작과 관련된 협업을 환영합니다.
-        </p>
-      </div>
+      <section class="section stack-section">
+        <div class="section-heading">
+          <p class="eyebrow">Tech Stack</p>
+          <h2>사용 기술</h2>
+        </div>
+        <div class="stack-cloud" aria-label="기술 스택">
+          <span>Next.js</span>
+          <span>TypeScript</span>
+          <span>React</span>
+          <span>Tailwind CSS</span>
+          <span>AWS</span>
+          <span>Cognito</span>
+          <span>Lambda</span>
+          <span>DynamoDB</span>
+          <span>S3</span>
+          <span>Python</span>
+          <span>Pandas</span>
+          <span>LightGBM</span>
+          <span>GitHub</span>
+          <span>Vercel</span>
+        </div>
+      </section>
 
-      <div class="contact-card">
-        <a href="mailto:ahnsangkyoon@gmail.com">ahnsangkyoon@gmail.com</a>
-        <a href="https://github.com/ahnsangkyoon" target="_blank" rel="noreferrer">GitHub @ahnsangkyoon</a>
-        <p class="small-note">※ GitHub 주소는 실제 사용 중인 주소에 맞게 수정해 주세요.</p>
-      </div>
-    </section>
-  </main>
+      <section id="timeline" class="section timeline-section">
+        <div class="section-heading">
+          <p class="eyebrow">Journey</p>
+          <h2>작업 흐름</h2>
+        </div>
 
-  <footer class="footer">
-    <p>© <span id="year"></span> Ahn Sangkyoon. Built with care.</p>
-    <a href="#top">맨 위로</a>
-  </footer>
+        <ol class="timeline">
+          <li>
+            <span class="time">Teaching</span>
+            <div>
+              <h3>교육 현장 경험</h3>
+              <p>
+                영어·코딩 수업을 진행하며 교사와 학생이 실제로 필요로 하는
+                도구를 관찰했습니다.
+              </p>
+            </div>
+          </li>
+          <li>
+            <span class="time">Build</span>
+            <div>
+              <h3>웹 서비스 제작</h3>
+              <p>
+                공유보드, 대시보드, 학생 접속 경로, 파일 업로드 등 교육 SaaS
+                기능을 구현해왔습니다.
+              </p>
+            </div>
+          </li>
+          <li>
+            <span class="time">Analyze</span>
+            <div>
+              <h3>AI·데이터 분석</h3>
+              <p>
+                예측 모델 실험과 제출 결과 분석을 통해 근거 있는 개선 루프를
+                쌓고 있습니다.
+              </p>
+            </div>
+          </li>
+          <li>
+            <span class="time">Next</span>
+            <div>
+              <h3>더 쓰기 쉬운 교육 제품</h3>
+              <p>
+                교사에게는 가볍고, 학생에게는 직관적인 수업 참여 도구를 목표로
+                개선 중입니다.
+              </p>
+            </div>
+          </li>
+        </ol>
+      </section>
 
-  <script src="./script.js"></script>
-</body>
+      <section id="contact" class="section contact-section">
+        <div>
+          <p class="eyebrow">Contact</p>
+          <h2>함께 만들고 싶은 일이 있다면 연락 주세요.</h2>
+          <p>
+            교육 기술, AI 활용 수업, 데이터 분석, 웹 서비스 제작과 관련된 협업을
+            환영합니다.
+          </p>
+        </div>
+
+        <div class="contact-card">
+          <a href="mailto:ahnsangkyoon@gmail.com">ahnsangkyoon@gmail.com</a>
+          <a
+            href="https://github.com/ahnsangkyoon"
+            target="_blank"
+            rel="noreferrer"
+            >GitHub @ahnsangkyoon</a
+          >
+          <p class="small-note">
+            ※ GitHub 주소는 실제 사용 중인 주소에 맞게 수정해 주세요.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>© <span id="year"></span> Ahn Sangkyoon. Built with care.</p>
+      <a href="#top">맨 위로</a>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
 </html>
