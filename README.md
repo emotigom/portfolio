@@ -37,3 +37,10 @@ python -m http.server 8000
 
 - GitHub: https://github.com/emotigom
 - Email: ahnsangkyoon@gmail.com
+
+## License
+
+- 웹사이트의 원본 코드와 일반 레이아웃: [MIT License](./LICENSE)
+- 자기소개·경력·프로젝트 설명·성과 수치·연락처·마스코트와 브랜드 콘텐츠: [All rights reserved](./CONTENT_NOTICE.md)
+
+코드와 레이아웃은 자유롭게 사용·수정·배포할 수 있습니다. 개인 포트폴리오 내용과 이미지는 MIT 라이선스에 포함되지 않습니다.
