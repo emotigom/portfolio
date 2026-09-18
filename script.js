@@ -1,8 +1,23 @@
 const root = document.documentElement;
 const themeButton = document.querySelector(".theme-toggle");
 const themeIcon = themeButton?.querySelector("span");
-const savedTheme = localStorage.getItem("portfolio-theme");
 const systemPrefersLight = window.matchMedia("(prefers-color-scheme: light)").matches;
+
+function readSavedTheme() {
+  try {
+    return localStorage.getItem("portfolio-theme");
+  } catch {
+    return null;
+  }
+}
+
+function saveTheme(theme) {
+  try {
+    localStorage.setItem("portfolio-theme", theme);
+  } catch {
+    // Theme still works for the current page when storage is unavailable.
+  }
+}
 
 function applyTheme(theme) {
   const isLight = theme === "light";
@@ -18,11 +33,11 @@ function applyTheme(theme) {
   themeIcon.textContent = isLight ? "☀" : "☾";
 }
 
-applyTheme(savedTheme ?? (systemPrefersLight ? "light" : "dark"));
+applyTheme(readSavedTheme() ?? (systemPrefersLight ? "light" : "dark"));
 
 themeButton?.addEventListener("click", () => {
   const nextTheme = root.classList.contains("light") ? "dark" : "light";
-  localStorage.setItem("portfolio-theme", nextTheme);
+  saveTheme(nextTheme);
   applyTheme(nextTheme);
 });
 
@@ -43,7 +58,7 @@ if (reduceMotion || !("IntersectionObserver" in window)) {
         currentObserver.unobserve(entry.target);
       });
     },
-    { rootMargin: "0px 0px -8%", threshold: 0.12 },
+    { rootMargin: "0px 0px -6%", threshold: 0.08 },
   );
 
   revealTargets.forEach((target) => observer.observe(target));
