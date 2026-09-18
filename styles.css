@@ -240,14 +240,19 @@ h4 {
   background: var(--surface-quiet);
 }
 .profile-row { display: flex; align-items: center; gap: 15px; padding-bottom: 20px; border-bottom: 1px solid var(--line); }
-.profile-photo {
+.profile-avatar {
+  display: grid;
+  place-items: center;
   width: 88px;
   height: 88px;
   flex: 0 0 auto;
-  object-fit: cover;
-  border: 1px solid var(--line);
+  border: 1px solid var(--line-strong);
   border-radius: 18px;
   background: var(--surface);
+  color: var(--accent);
+  font-size: 1.05rem;
+  font-weight: 950;
+  letter-spacing: -0.04em;
 }
 .profile-name { margin-bottom: 3px; font-weight: 900; }
 .profile-role { margin-bottom: 0; color: var(--muted); font-size: 0.88rem; }
@@ -427,7 +432,7 @@ h4 {
   .hero-actions .button { width: 100%; }
   .hero-actions .text-link { padding: 10px 2px; }
   .hero-profile { padding: 18px; }
-  .profile-photo { width: 72px; height: 72px; }
+  .profile-avatar { width: 72px; height: 72px; }
   .evidence-strip > div { padding: 18px; }
   .case-grid section { padding: 18px; }
   .project-row { padding: 38px 0; }
