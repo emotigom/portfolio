@@ -55,6 +55,7 @@ AI 헬스케어 KDT 캡스톤으로 개발한 비진단형 혈압·생활습관 
 
 ## Links
 
+- Resume: [Ahn Sangkyoon · Python Backend / Full-stack](./assets/Ahn_Sangkyoon_Resume_PythonBackend_Fullstack_20260918.pdf)
 - GitHub: https://github.com/emotigom
 - Email: ahnsangkyoon@gmail.com
 - SK7: https://hyeol.app/
