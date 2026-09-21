@@ -1,0 +1,25 @@
+name: Portfolio checks
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+permissions:
+  contents: read
+concurrency:
+  group: portfolio-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  static:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check HTML structure, local links and evidence references
+        run: python3 scripts/check_site.py
+      - name: Test static checker regressions
+        run: python3 -m unittest discover -s tests -p 'test_*.py' -v
+      - name: Check JavaScript and optional theme behavior
+        run: |
+          node --check script.js
+          node --test tests/theme.test.cjs

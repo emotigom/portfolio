@@ -1,422 +1,131 @@
 <!doctype html>
 <html lang="ko">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#0b1010" />
-    <title>안상균 | Python Backend / Full-stack Developer</title>
-    <meta
-      name="description"
-      content="Python/FastAPI와 React/TypeScript로 인증·데이터 경계부터 클라우드 배포와 검증까지 연결해 온 안상균의 개발 포트폴리오입니다."
-    />
-    <meta name="author" content="Ahn Sangkyoon" />
-    <link rel="canonical" href="https://emotigom.github.io/portfolio/" />
-    <meta property="og:type" content="website" />
-    <meta property="og:locale" content="ko_KR" />
-    <meta property="og:url" content="https://emotigom.github.io/portfolio/" />
-    <meta property="og:title" content="안상균 | Python Backend / Full-stack Developer" />
-    <meta
-      property="og:description"
-      content="FastAPI · React · PostgreSQL · Cloud deployment · AI/Data"
-    />
-    <meta
-      property="og:image"
-      content="https://raw.githubusercontent.com/emotigom/portfolio/main/assets/og-portfolio.png"
-    />
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="안상균 | Python Backend / Full-stack Developer" />
-    <meta
-      name="twitter:description"
-      content="FastAPI · React · PostgreSQL · Cloud deployment · AI/Data"
-    />
-    <meta
-      name="twitter:image"
-      content="https://raw.githubusercontent.com/emotigom/portfolio/main/assets/og-portfolio.png"
-    />
-    <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
-    <link rel="stylesheet" href="./styles.css" />
-    <script src="./script.js" defer></script>
-  </head>
-  <body>
-    <a class="skip-link" href="#main">본문으로 바로가기</a>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b0f0f" media="(prefers-color-scheme: dark)">
+  <meta name="theme-color" content="#f5f7f4" media="(prefers-color-scheme: light)">
+  <title>안상균 | Python Backend Developer</title>
+  <meta name="description" content="Python/FastAPI와 PostgreSQL을 중심으로 인증·데이터 경계부터 배포와 검증까지 연결한 안상균의 개발 포트폴리오. 구현 코드, 테스트, 배포·복구 기록을 확인할 수 있습니다.">
+  <meta name="author" content="Ahn Sangkyoon">
+  <link rel="canonical" href="https://emotigom.github.io/portfolio/">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="ko_KR">
+  <meta property="og:url" content="https://emotigom.github.io/portfolio/">
+  <meta property="og:title" content="안상균 | Python Backend Developer">
+  <meta property="og:description" content="인증·데이터 경계부터 배포와 검증까지. 실제 구현과 검증 기록으로 연결한 개발 포트폴리오.">
+  <meta property="og:image" content="https://raw.githubusercontent.com/emotigom/portfolio/main/assets/og-portfolio.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="안상균 | Python Backend Developer">
+  <meta name="twitter:description" content="FastAPI · PostgreSQL · 인증과 데이터 소유권 · 배포·복구 검증">
+  <meta name="twitter:image" content="https://raw.githubusercontent.com/emotigom/portfolio/main/assets/og-portfolio.png">
+  <link rel="icon" href="./favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./styles.css">
+  <script src="./script.js" defer></script>
+</head>
+<body>
+<a class="skip-link" href="#main">본문으로 바로가기</a>
+<header class="site-header">
+  <a class="brand" href="#top" aria-label="안상균 포트폴리오 첫 화면">
+    <span class="brand-mark" aria-hidden="true">AS</span>
+    <span><strong>Ahn Sangkyoon</strong><small>안상균 · Python Backend</small></span>
+  </a>
+  <nav class="desktop-nav" aria-label="주요 메뉴">
+    <a href="#sk7">Case Study</a><a href="#work">Work</a><a href="#background">Background</a><a href="#contact">Contact</a>
+  </nav>
+  <div class="header-tools">
+    <a class="header-resume" href="./assets/Ahn_Sangkyoon_Resume_PythonBackend_Fullstack.pdf" target="_blank" rel="noopener noreferrer">이력서 <span aria-hidden="true">↗</span></a>
+    <button class="theme-toggle" type="button" aria-label="밝은 테마로 전환" aria-pressed="false" hidden><span aria-hidden="true">◐</span></button>
+    <details class="mobile-menu">
+      <summary>메뉴<span aria-hidden="true"> +</span></summary>
+      <nav aria-label="모바일 주요 메뉴"><a href="#sk7">SK7 사례</a><a href="#work">다른 프로젝트</a><a href="#background">경력 배경</a><a href="#contact">연락처</a></nav>
+    </details>
+  </div>
+</header>
+<main id="main" tabindex="-1">
+  <section id="top" class="hero wrap" aria-labelledby="hero-title">
+    <div class="hero-copy">
+      <p class="eyebrow">Python Backend Developer <span>/ Backend-first Full-stack</span></p>
+      <h1 id="hero-title">Python 백엔드를 중심으로,<br> 인증·데이터 경계부터<br> <span>배포와 검증까지 연결합니다.</span></h1>
+      <p class="hero-text">FastAPI와 PostgreSQL로 사용자 요청과 데이터 접근 규칙을 구현합니다.<br class="desktop-break"> React 화면과 클라우드 배포를 연결하고, 테스트와 배포·복구 기록으로 동작을 확인해 왔습니다.</p>
+      <p class="hero-stack">Python · FastAPI · PostgreSQL · React/TypeScript</p>
+      <div class="actions"><a class="button primary" href="#sk7">SK7 사례 보기 <span aria-hidden="true">↓</span></a><a class="button secondary" href="./assets/Ahn_Sangkyoon_Resume_PythonBackend_Fullstack.pdf" target="_blank" rel="noopener noreferrer">이력서 PDF <span aria-hidden="true">↗</span></a><a class="text-link" href="https://github.com/emotigom" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a></div>
+    </div>
+    <aside class="proof-panel" aria-label="대표 엔지니어링 경험">
+      <p class="panel-label">ENGINEERING PROOF <span aria-hidden="true">01—03</span></p>
+      <a href="#identity"><span class="proof-index">01 / OWNERSHIP</span><strong>Auth → API → RLS</strong><span>검증된 사용자 신원을 데이터 접근까지</span><span class="panel-arrow" aria-hidden="true">↘</span></a>
+      <a href="#lifecycle"><span class="proof-index">02 / LIFECYCLE</span><strong>접근 만료 ≠ 물리 삭제</strong><span>30일 접근 경계와 정리 작업의 분리</span><span class="panel-arrow" aria-hidden="true">↘</span></a>
+      <a href="#release"><span class="proof-index">03 / DELIVERY</span><strong>Deploy → Rollback</strong><span>Cloud Run 배포·복구 검증 기록</span><span class="panel-arrow" aria-hidden="true">↘</span></a>
+    </aside>
+  </section>
+  <nav class="evidence-strip wrap" aria-label="핵심 근거 바로가기">
+    <a href="#identity"><strong>인증과 데이터 소유권</strong><span>구현 · 회귀 테스트</span><b aria-hidden="true">↘</b></a>
+    <a href="#release"><strong>배포와 복구</strong><span>날짜가 남은 운영 검증 기록</span><b aria-hidden="true">↘</b></a>
+    <a href="#background"><strong>50개+ 교육 현장</strong><span>비개발 사용자의 요구와 운영 제약</span><b aria-hidden="true">↘</b></a>
+  </nav>
 
-    <header class="site-header" aria-label="사이트 헤더">
-      <a class="brand" href="#top" aria-label="안상균 포트폴리오 홈">
-        <span class="brand-mark" aria-hidden="true">AS</span>
-        <span class="brand-copy">
-          <strong>Ahn Sangkyoon</strong>
-          <small>Python Backend / Full-stack Developer</small>
-        </span>
-      </a>
-
-      <nav class="nav" aria-label="주요 메뉴">
-        <a href="#projects">Projects</a>
-        <a href="#stack">Stack</a>
-        <a href="#experience">Experience</a>
-        <a href="#contact">Contact</a>
-      </nav>
-
-      <button
-        class="theme-toggle"
-        type="button"
-        aria-label="밝은 테마로 전환"
-        aria-pressed="false"
-      >
-        <span aria-hidden="true">☾</span>
-      </button>
+  <article id="sk7" class="flagship wrap section" aria-labelledby="sk7-title">
+    <header class="project-header">
+      <div><p class="eyebrow">01 / Flagship Case Study</p><h2 id="sk7-title">SK7 <span class="muted">상균7데이즈</span></h2><p class="lead">혈압 관찰값과 7일 생활습관을 기록하고 돌아보는<br class="desktop-break"> 교육·연구 목적의 비진단형 웹 서비스입니다.</p></div>
+      <div class="project-actions"><a class="button secondary" href="https://hyeol.app/" target="_blank" rel="noopener noreferrer">서비스 열기 <span aria-hidden="true">↗</span></a><a class="text-link" href="https://github.com/AI-HealthCare-05/AH_05_07" target="_blank" rel="noopener noreferrer">저장소 <span aria-hidden="true">↗</span></a></div>
     </header>
+    <div class="product-overview" aria-label="제품 기능 요약">
+      <p class="small-label">PRODUCT OVERVIEW <span>기록 → 확인 → 회고</span></p>
+      <div class="product-steps"><div><span>01 / 기록</span><h3>오늘의 관찰을 남기기</h3><p>혈압 관찰값과 선택한 생활습관을 각각 기록합니다.</p></div><div><span>02 / 확인</span><h3>내 기록을 찾아보기</h3><p>날짜별 기록을 조회하고, 필요한 항목을 수정·삭제·내보냅니다.</p></div><div><span>03 / 회고</span><h3>7일을 돌아보기</h3><p>관찰값과 행동 기록을 서로 다른 사실로 유지합니다.</p></div></div>
+    </div>
 
-    <main id="main">
-      <section id="top" class="section hero reveal">
-        <div class="hero-copy">
-          <p class="eyebrow">Python Backend / Full-stack Developer</p>
-          <h1>
-            인증·데이터 경계부터 배포·검증까지,<br />
-            <span>실제로 이어지는 웹 서비스를 만듭니다.</span>
-          </h1>
-          <p class="hero-text">
-            Python/FastAPI와 React/TypeScript로 실제 웹 서비스를 구현하고,
-            PostgreSQL 권한 경계, 클라우드 배포, 테스트와 release 검증까지 연결해 왔습니다.
-            비개발 사용자의 요구를 화면·API·데이터 계약으로 구체화하는 데 강점이 있습니다.
-          </p>
-          <p class="hero-stack" aria-label="핵심 기술">
-            FastAPI · React · TypeScript · PostgreSQL · Cloud deployment · AI/Data
-          </p>
-          <div class="hero-actions">
-            <a class="button primary" href="#sk7">SK7 case study</a>
-            <a
-              class="button secondary"
-              href="./assets/Ahn_Sangkyoon_Resume_PythonBackend_Fullstack_20260918.pdf"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Resume PDF <span aria-hidden="true">↗</span>
-            </a>
-            <a class="text-link" href="https://hyeol.app/" target="_blank" rel="noreferrer">
-              Live service <span aria-hidden="true">↗</span>
-            </a>
-            <a class="text-link" href="https://github.com/emotigom" target="_blank" rel="noreferrer">
-              GitHub <span aria-hidden="true">↗</span>
-            </a>
-          </div>
-        </div>
+    <section class="ownership subsection" aria-labelledby="ownership-title">
+      <div class="section-intro"><p class="eyebrow">What I Owned</p><h3 id="ownership-title">담당한 범위</h3><p>백엔드를 중심으로 웹 연동과 배포·검증을 연결했습니다. 대표 변경 이력도 함께 남깁니다.</p></div>
+      <div><dl class="ownership-grid"><div><dt>API</dt><dd>기록·조회·수정·내보내기</dd></div><div><dt>Authentication</dt><dd>Supabase 세션 검증·복구</dd></div><div><dt>Data ownership</dt><dd>호출자 토큰 전달·RLS</dd></div><div><dt>Lifecycle</dt><dd>접근 만료·계정 삭제</dd></div><div><dt>Web integration</dt><dd>React 화면·오류·상태 복구</dd></div><div><dt>Delivery</dt><dd>분리 배포·E2E·복구 검증</dd></div></dl><div class="evidence-links"><a data-evidence="pr-account" href="https://github.com/AI-HealthCare-05/AH_05_07/pull/348" target="_blank" rel="noopener noreferrer">계정 삭제 PR #348 <span aria-hidden="true">↗</span></a> <a data-evidence="pr-release" href="https://github.com/AI-HealthCare-05/AH_05_07/pull/263" target="_blank" rel="noopener noreferrer">배포 검증 PR #263 <span aria-hidden="true">↗</span></a></div><p class="note">PR은 해당 변경의 기여 기록입니다. 저장소 전체의 단독 기여율을 의미하지 않습니다.</p></div>
+    </section>
 
-        <aside class="hero-profile" aria-label="개발자 소개 요약">
-          <div class="profile-row">
-            <span class="profile-avatar" aria-hidden="true">AS</span>
-            <div>
-              <p class="profile-name">Ahn Sangkyoon · 안상균</p>
-              <p class="profile-role">Backend-first, product-minded</p>
-            </div>
-          </div>
-          <dl class="profile-facts">
-            <div>
-              <dt>Backend</dt>
-              <dd>FastAPI REST API · JWT · PostgreSQL RLS</dd>
-            </div>
-            <div>
-              <dt>Delivery</dt>
-              <dd>Docker · Cloud Run · Cloudflare · GitHub Actions CI</dd>
-            </div>
-            <div>
-              <dt>Validation</dt>
-              <dd>pytest · Playwright · smoke · rollback rehearsal</dd>
-            </div>
-          </dl>
-        </aside>
+    <section class="architecture subsection" aria-labelledby="architecture-title">
+      <div class="section-heading"><p class="eyebrow">System Boundary</p><h3 id="architecture-title">사용자 신원을 DB 접근까지 유지합니다.</h3><p>아래는 <strong>기록 API의 인증·데이터 경로</strong>입니다. 브라우저 내 모델 분석은 별도 경로입니다.</p></div>
+      <ol class="system-flow"><li><span>01 / CLIENT</span><strong>React · TypeScript</strong><small>Supabase access token 전달</small></li><li><span>02 / API</span><strong>FastAPI</strong><small>Auth /user로 세션 확인</small></li><li><span>03 / DATA API</span><strong>PostgREST</strong><small>검증된 호출자의 토큰 유지</small></li><li><span>04 / DATABASE</span><strong>PostgreSQL RLS</strong><small>소유자 · 만료 조건 검사</small></li></ol>
+      <p class="deployment-line"><span>Web <strong>Cloudflare</strong></span><span>API <strong>Cloud Run</strong></span><span>Data / Auth <strong>Supabase</strong></span></p>
+    </section>
+
+    <section id="engineering" class="engineering subsection" aria-labelledby="engineering-title">
+      <div class="section-heading"><p class="eyebrow">Engineering Evidence</p><h3 id="engineering-title">설계 판단을 구현과 검증 기록으로 연결합니다.</h3><p>소스·테스트 코드와 과거 운영 검증은 서로 다른 종류의 근거입니다.</p></div>
+      <section id="identity" class="evidence-row" aria-labelledby="identity-title">
+        <div class="evidence-number" aria-hidden="true">01</div>
+        <div class="evidence-copy"><p class="eyebrow">Identity &amp; Ownership</p><h4 id="identity-title">클라이언트가 보낸<br> 사용자 ID를 신뢰하지 않습니다.</h4><p>FastAPI에서 Supabase 세션을 확인한 뒤, 요청의 소유자를 <code>session.user_id</code>로 정합니다. DB 요청에도 같은 호출자의 토큰을 전달해 RLS가 적용되도록 했습니다.</p><div class="evidence-links"><a data-evidence="sk7-auth" href="https://github.com/AI-HealthCare-05/AH_05_07/blob/ccc66c165eefbdaec77e5bb0cad57b989f38e92c/app/dependencies/supabase_auth.py" target="_blank" rel="noopener noreferrer">세션 검증 코드 <span aria-hidden="true">↗</span></a> <a data-evidence="sk7-store" href="https://github.com/AI-HealthCare-05/AH_05_07/blob/ccc66c165eefbdaec77e5bb0cad57b989f38e92c/app/services/observation_store.py" target="_blank" rel="noopener noreferrer">저장 계층 코드 <span aria-hidden="true">↗</span></a> <a data-evidence="sk7-store-tests" href="https://github.com/AI-HealthCare-05/AH_05_07/blob/ccc66c165eefbdaec77e5bb0cad57b989f38e92c/app/tests/test_observation_store.py" target="_blank" rel="noopener noreferrer">회귀 테스트 <span aria-hidden="true">↗</span></a></div></div>
+        <div class="evidence-visual"><div class="code-head"><span>observation_store.py</span><span>발췌</span></div><pre><code><span class="code-comment"># 검증된 세션의 토큰과 신원</span>
+"Authorization": f"Bearer {session.access_token}"
+
+json={**values, "user_id": session.user_id}</code></pre><p class="visual-note">회귀 테스트는 클라이언트의 임의 ID가 세션 ID로 대체되는지 확인합니다. <strong>Mock HTTP 기반 테스트 코드</strong>이며 현재 운영 RLS 검증은 아닙니다.</p></div>
       </section>
-
-      <section class="section evidence-strip reveal" aria-label="핵심 개발 경험">
-        <div>
-          <strong>Auth → API → RLS</strong>
-          <span>사용자 데이터 경계를 제품 흐름과 연결</span>
-        </div>
-        <div>
-          <strong>CI → 승인형 release</strong>
-          <span>병합과 production 배포를 분리해 검증</span>
-        </div>
-        <div>
-          <strong>50+ 현장</strong>
-          <span>비개발 사용자의 실제 제약을 직접 경험</span>
-        </div>
+      <section id="lifecycle" class="evidence-row" aria-labelledby="lifecycle-title">
+        <div class="evidence-number" aria-hidden="true">02</div>
+        <div class="evidence-copy"><p class="eyebrow">Data Lifecycle</p><h4 id="lifecycle-title">접근 만료를<br> 삭제 작업에 의존시키지 않습니다.</h4><p>DB가 30일 만료 시각을 정하고 임의 연장을 거부합니다. 소유권과 만료 조건을 RLS에서 함께 검사하고, 만료된 행의 물리 삭제는 별도 정리 작업으로 분리했습니다.</p><div class="evidence-links"><a data-evidence="sk7-retention" href="https://github.com/AI-HealthCare-05/AH_05_07/blob/ccc66c165eefbdaec77e5bb0cad57b989f38e92c/supabase/migrations/20260903055923_enforce_exact_time_retention.sql" target="_blank" rel="noopener noreferrer">만료 정책 SQL <span aria-hidden="true">↗</span></a> <a data-evidence="sk7-expiry-record" href="https://github.com/AI-HealthCare-05/AH_05_07/blob/ccc66c165eefbdaec77e5bb0cad57b989f38e92c/docs/evidence/ac05-deployed-expiry-invisibility.md" target="_blank" rel="noopener noreferrer">합성 만료 검증 기록 <span aria-hidden="true">↗</span></a></div></div>
+        <div class="evidence-visual lifecycle-visual"><div class="code-head"><span>PostgreSQL policy</span><span>핵심 조건 발췌</span></div><pre class="sql"><code>(select auth.uid()) = user_id
+<span>and expires_at &gt; now()</span></code></pre><ol class="lifecycle-flow"><li>서버 만료 시각</li><li>RLS 접근 제한</li><li>물리 정리</li></ol><p class="visual-note"><time datetime="2026-09-08">2026.09.08</time> 검증 기록: 합성 혈압 관찰 행이 물리 삭제 전에 소유자에게 보이지 않음을 확인했습니다. 자연 상태의 30일 관찰이나 현재 전체 환경 검증은 아닙니다.</p></div>
       </section>
-
-      <section id="projects" class="section projects-section">
-        <div class="section-heading reveal">
-          <p class="eyebrow">Selected Engineering Work</p>
-          <h2>구현보다 먼저, 책임과 검증 범위를 보여줍니다.</h2>
-          <p class="section-lead">
-            기술 이름을 나열하기보다 어떤 문제를 맡았고, 어떤 경계를 설계했으며,
-            무엇으로 작동 여부를 확인했는지 중심으로 정리했습니다.
-          </p>
-        </div>
-
-        <article id="sk7" class="case-study flagship reveal">
-          <header class="case-header">
-            <div>
-              <p class="project-index">01 · Flagship · Production web service</p>
-              <h3>SK7 · 상균7데이즈</h3>
-              <p class="case-summary">
-                혈압 관찰값과 7일 생활습관 챌린지를 기록·조회·수정·회고하는
-                교육·연구 목적의 비진단형 웹 서비스입니다.
-              </p>
-            </div>
-            <div class="case-actions" aria-label="SK7 링크">
-              <a class="button compact primary" href="https://hyeol.app/" target="_blank" rel="noreferrer">
-                Live <span aria-hidden="true">↗</span>
-              </a>
-              <a class="button compact secondary" href="https://github.com/AI-HealthCare-05/AH_05_07" target="_blank" rel="noreferrer">
-                GitHub <span aria-hidden="true">↗</span>
-              </a>
-            </div>
-          </header>
-
-          <div class="architecture" aria-label="SK7 시스템 구성">
-            <div>
-              <span class="arch-label">Web</span>
-              <strong>React / TypeScript</strong>
-              <small>Cloudflare Worker</small>
-            </div>
-            <span class="arch-arrow" aria-hidden="true">→</span>
-            <div>
-              <span class="arch-label">API</span>
-              <strong>FastAPI / JWT</strong>
-              <small>Google Cloud Run</small>
-            </div>
-            <span class="arch-arrow" aria-hidden="true">→</span>
-            <div>
-              <span class="arch-label">Data</span>
-              <strong>PostgreSQL / RLS</strong>
-              <small>Supabase Auth · ownership</small>
-            </div>
-          </div>
-
-          <div class="case-grid">
-            <section>
-              <h4>Problem</h4>
-              <p>
-                생활 기록 서비스에서 인증 성공만으로는 충분하지 않았습니다. 로그인 이후에도
-                API와 DB가 사용자 소유권을 일관되게 지키고, 계정·데이터 삭제와 보존 기간까지
-                제품 동작으로 닫혀야 했습니다.
-              </p>
-            </section>
-            <section>
-              <h4>Responsibility</h4>
-              <p>
-                Backend / Full-stack 관점에서 REST API, 인증·데이터 경계, React 연동,
-                Web/API 분리 배포와 QA·release 검증 흐름을 연결했습니다.
-              </p>
-            </section>
-            <section>
-              <h4>Technical decisions</h4>
-              <p>
-                Supabase Magic Link 세션을 JWT 기반 API 접근과 연결하고 PostgreSQL RLS로
-                사용자별 행 소유권을 제한했습니다. CRUD, JSON export, 계정 삭제와 30일
-                데이터 수명주기를 명시적인 제품 계약으로 구현했습니다.
-              </p>
-            </section>
-            <section>
-              <h4>Validation & result</h4>
-              <p>
-                Docker 이미지를 Cloud Build → Artifact Registry → Cloud Run으로 배포하고,
-                GitHub Actions CI + 승인형 release pipeline, Playwright E2E, production smoke,
-                rollback rehearsal과 release evidence로 실제 배포 상태를 검증했습니다.
-              </p>
-            </section>
-          </div>
-
-          <p class="tech-line">
-            <strong>Stack</strong>
-            Python · FastAPI · PostgreSQL · React · TypeScript · Supabase Auth/RLS · JWT · Docker · GCP · Cloudflare · Playwright · pytest
-          </p>
-        </article>
-
-        <div class="project-list">
-          <article class="project-row reveal">
-            <div class="project-row-title">
-              <p class="project-index">02 · Live event operations</p>
-              <h3>Nextbridge</h3>
-              <p class="project-summary">
-                교사 워크숍의 일정·협의실·현장 질문을 휴대전화로 지원하고,
-                행사 종료 후에도 기존 답변 조회를 보존한 운영 웹입니다.
-              </p>
-              <a class="text-link" href="https://github.com/emotigom/nextbridge" target="_blank" rel="noreferrer">
-                GitHub repository <span aria-hidden="true">↗</span>
-              </a>
-            </div>
-            <dl class="project-facts">
-              <div>
-                <dt>Problem / Responsibility</dt>
-                <dd>현장 사용자가 QR로 바로 접근해야 했고, 익명 질문과 운영진 처리 권한을 분리해야 했습니다.</dd>
-              </div>
-              <div>
-                <dt>Technical decisions</dt>
-                <dd>Supabase Edge Functions를 공개 API 경계로 두고 RLS·권한 회수·Turnstile 서버 검증·원자적 rate limiting을 적용했습니다.</dd>
-              </div>
-              <div>
-                <dt>Validation / Result</dt>
-                <dd>GitHub Pages + Cloudflare 고정 QR 경로를 실제 휴대전화로 종단 검증하고, ready → published → archived 운영 상태와 신규 접수 차단을 실제 행사 종료까지 운영했습니다.</dd>
-              </div>
-            </dl>
-            <p class="tech-line"><strong>Stack</strong> Astro · TypeScript · Supabase Edge Functions · PostgreSQL RLS · Turnstile · GitHub Pages · Cloudflare</p>
-          </article>
-
-          <article class="project-row reveal">
-            <div class="project-row-title">
-              <p class="project-index">03 · ML experiment & validation</p>
-              <h3>Stress Score Prediction</h3>
-              <p class="project-summary">
-                약 3,000행·16개 입력 특성의 tabular regression에서 모델 성능뿐 아니라
-                검증 계약과 실험 재현성을 함께 관리했습니다.
-              </p>
-              <span class="private-note">Private repository</span>
-            </div>
-            <dl class="project-facts">
-              <div>
-                <dt>Problem / Responsibility</dt>
-                <dd>제한된 데이터와 제출 횟수 안에서 leaderboard 과적합을 피하면서 개선 후보를 검증해야 했습니다.</dd>
-              </div>
-              <div>
-                <dt>Technical decisions</dt>
-                <dd>ExtraTrees를 기준으로 구조 피처와 Pair-Neighbor·거리 기반 조합을 실험하고 OOF, secondary validation, independent seed test를 분리했습니다.</dd>
-              </div>
-              <div>
-                <dt>Validation / Result</dt>
-                <dd>최종 Public MAE 0.1271229333을 기록해 baseline 0.1282776667 대비 Public MAE를 약 0.9% 낮췄습니다. Public score를 일반화 성능으로 과장하지 않고 미채택 가설과 제출 Notebook도 남겼습니다.</dd>
-              </div>
-            </dl>
-            <p class="tech-line"><strong>Stack</strong> Python · scikit-learn · pandas · NumPy · ExtraTrees · Pair-Neighbor · OOF validation</p>
-          </article>
-
-          <article class="project-row reveal">
-            <div class="project-row-title">
-              <p class="project-index">04 · 3D coding prototype</p>
-              <h3>Gomdory Play</h3>
-              <p class="project-summary">
-                제한된 JavaScript 형태의 학생 입력을 안전하게 내부 명령으로 변환해
-                3D 물리 미션에 연결하는 코딩 교육 프로토타입입니다.
-              </p>
-              <a class="text-link" href="https://github.com/emotigom/gomdory-play" target="_blank" rel="noreferrer">
-                GitHub repository <span aria-hidden="true">↗</span>
-              </a>
-            </div>
-            <dl class="project-facts">
-              <div>
-                <dt>Problem / Responsibility</dt>
-                <dd>학생 코드를 그대로 실행하지 않으면서도 코드 수정이 3D 장면 변화로 이어지는 즉각적인 피드백이 필요했습니다.</dd>
-              </div>
-              <div>
-                <dt>Technical decisions</dt>
-                <dd>Acorn으로 제한된 JavaScript AST를 파싱하고 allowlist된 syntax만 내부 ThrowCommand로 변환했습니다. <code>eval</code>은 사용하지 않습니다.</dd>
-              </div>
-              <div>
-                <dt>Validation / Result</dt>
-                <dd>React Three Fiber + Rapier로 power·variable·addition expression·angle 미션과 keyboard/pointer aiming을 구현하고, WebGL fallback과 Vitest로 해석·상태 전이를 검증했습니다.</dd>
-              </div>
-            </dl>
-            <p class="tech-line"><strong>Stack</strong> React · TypeScript · React Three Fiber · Three.js · Rapier · Acorn · Vitest</p>
-          </article>
-        </div>
+      <section id="release" class="evidence-row" aria-labelledby="release-title">
+        <div class="evidence-number" aria-hidden="true">03</div>
+        <div class="evidence-copy"><p class="eyebrow">Release Safety</p><h4 id="release-title">배포뿐 아니라<br> 되돌리는 과정도 확인했습니다.</h4><p>Cloud Build에서 만든 이미지의 digest를 기록하고, Cloud Run 새 revision을 트래픽 없이 배포했습니다. 확인 후 전환하고, 이전 revision으로 복구한 뒤 새 revision을 다시 적용하며 smoke 검사를 수행했습니다.</p><div class="evidence-links"><a data-evidence="sk7-release" href="https://github.com/AI-HealthCare-05/AH_05_07/blob/ccc66c165eefbdaec77e5bb0cad57b989f38e92c/docs/evidence/o3-clean-release-execution.md" target="_blank" rel="noopener noreferrer">배포·복구 실행 기록 <span aria-hidden="true">↗</span></a> <a data-evidence="pr-release" href="https://github.com/AI-HealthCare-05/AH_05_07/pull/263" target="_blank" rel="noopener noreferrer">검증 기록 PR #263 <span aria-hidden="true">↗</span></a></div></div>
+        <div class="evidence-visual release-visual"><p class="record-stamp">HISTORICAL RECORD <time datetime="2026-09-07">2026.09.07</time></p><ol class="release-flow"><li><span>Build</span><small>image digest</small></li><li><span>0% traffic</span><small>smoke</small></li><li><span>Activate</span><small>smoke</small></li></ol><dl class="release-results"><div><dt>운영 전환</dt><dd>PASS</dd></div><div><dt>이전 revision 복구</dt><dd>PASS</dd></div><div><dt>새 revision 재적용</dt><dd>PASS</dd></div></dl><p class="visual-note">당시 <strong>API 한정 배포·복구</strong> 기록입니다. 현재 서비스 상태, 웹 재배포, 인증된 사용자 흐름 또는 동일 비트 재빌드를 보증하지 않습니다.</p></div>
       </section>
+    </section>
 
-      <section id="stack" class="section stack-section reveal">
-        <div class="section-heading compact">
-          <p class="eyebrow">Engineering Stack</p>
-          <h2>프로젝트에서 실제로 연결해 본 기술</h2>
-        </div>
-        <dl class="stack-list">
-          <div>
-            <dt>Backend</dt>
-            <dd>Python · FastAPI · REST API · PostgreSQL · SQL · Supabase Auth/RLS · JWT</dd>
-          </div>
-          <div>
-            <dt>Frontend</dt>
-            <dd>React · TypeScript · JavaScript · HTML/CSS · Vite · Astro · Responsive UI</dd>
-          </div>
-          <div>
-            <dt>Cloud / Delivery</dt>
-            <dd>Docker · GitHub Actions CI · 승인형 release pipeline · Google Cloud Build/Run · Artifact Registry · Cloudflare Workers/R2</dd>
-          </div>
-          <div>
-            <dt>QA / Data</dt>
-            <dd>pytest · Playwright · Vitest · scikit-learn · pandas · NumPy · OOF validation</dd>
-          </div>
-        </dl>
-      </section>
+    <details id="account" class="deep-dive">
+      <summary><span><span class="eyebrow">Deep Dive / Account Lifecycle</span><strong>늦게 끝난 계정 삭제가 새 세션을 지우지 않도록</strong><span class="summary-note">호출자 한정 삭제 API와 비동기 세션 정리의 경합 처리</span></span><span class="expand-mark" aria-hidden="true">+</span></summary>
+      <div class="deep-content"><div><h4>어떤 문제였나요?</h4><p>이전 세션의 삭제 후 정리 작업이 진행되는 동안 같은 사용자의 토큰이 갱신되거나 다른 계정으로 바뀔 수 있습니다. 이전 작업이 끝났다는 이유만으로 새 세션의 상태와 저장 정보를 지우면 안 됩니다.</p><h4>어떻게 나눴나요?</h4><p>삭제 API는 검증된 세션의 사용자만 대상으로 삼습니다. 브라우저의 정리 작업은 요청 당시 토큰과 세션 맥락을 확인하고, 더 새로운 세션을 덮어쓰지 않도록 했습니다.</p></div><div class="race-note"><span>이전 세션 → 삭제 요청 → 정리 대기</span><strong>그 사이 새 세션이 도착</strong><span>이전 작업 완료 → 새 세션은 유지</span><p class="note">아래 E2E는 합성 세션과 mock API 기반 경합 검사입니다. 실제 Supabase 계정 삭제·cascade 전체의 운영 검증과 구분합니다.</p></div><div class="evidence-links"><a data-evidence="sk7-account" href="https://github.com/AI-HealthCare-05/AH_05_07/blob/ccc66c165eefbdaec77e5bb0cad57b989f38e92c/app/apis/v1/account_routers.py" target="_blank" rel="noopener noreferrer">계정 삭제 API <span aria-hidden="true">↗</span></a> <a data-evidence="sk7-account-tests" href="https://github.com/AI-HealthCare-05/AH_05_07/blob/ccc66c165eefbdaec77e5bb0cad57b989f38e92c/web/e2e/account-removal.spec.ts" target="_blank" rel="noopener noreferrer">세션 경합 E2E <span aria-hidden="true">↗</span></a> <a data-evidence="pr-session-race" href="https://github.com/AI-HealthCare-05/AH_05_07/pull/368" target="_blank" rel="noopener noreferrer">경합 수정 PR #368 <span aria-hidden="true">↗</span></a></div></div>
+    </details>
+    <p class="source-note">코드 링크는 검토한 commit에 고정했습니다. 검증 기록의 실행일은 각 영역에 표시합니다. <a href="./assets/evidence-map.json">근거 목록 JSON <span aria-hidden="true">↗</span></a></p>
+  </article>
 
-      <section id="experience" class="section experience-section">
-        <div class="section-heading reveal">
-          <p class="eyebrow">Relevant Background</p>
-          <h2>개발 이전 경험은 사용자 문제를 읽는 기반으로 남겼습니다.</h2>
-          <p class="section-lead">
-            경력 전체를 나열하기보다 현재 개발 역할과 직접 연결되는 경험만 요약합니다.
-          </p>
-        </div>
-        <ol class="timeline">
-          <li class="reveal">
-            <span class="time">2026</span>
-            <div>
-              <h3>AI 헬스케어 KDT · SK7 capstone</h3>
-              <p>FastAPI · PostgreSQL/Supabase · React/TypeScript · Cloudflare · Google Cloud 기반으로 인증, API, 데이터 경계, 배포와 QA를 연결했습니다.</p>
-            </div>
-          </li>
-          <li class="reveal">
-            <span class="time">2020—Now</span>
-            <div>
-              <h3>AI·SW 교육 및 브라우저 기반 수업도구 개발</h3>
-              <p>초·중·고·특수학교와 교육기관 50개+ 현장에서 비개발 사용자의 요구와 기기·네트워크·운영 제약을 직접 다뤘습니다.</p>
-            </div>
-          </li>
-          <li class="reveal">
-            <span class="time">Earlier</span>
-            <div>
-              <h3>KIST 시뮬레이션 연구 · DB 관리 · 웹 운영 경험</h3>
-              <p>계산 결과를 구조화하는 연구 경험, DB 관리, 홈페이지 개발·마케팅 운영 경험을 현재의 데이터·제품 관점으로 연결하고 있습니다.</p>
-            </div>
-          </li>
-        </ol>
-      </section>
+  <section id="work" class="other-work wrap section" aria-labelledby="work-title">
+    <div class="section-heading"><p class="eyebrow">Other Engineering Work</p><h2 id="work-title">다른 문제, 다른 구현 방식.</h2></div>
+    <article class="work-row" aria-labelledby="nextbridge-title"><div><p class="eyebrow">02 / Event Operations</p><h3 id="nextbridge-title">Nextbridge</h3><p class="work-meta">Astro · TypeScript · Supabase</p></div><div><h4>익명 접수와 운영진 처리를 분리한 행사 지원 웹</h4><p>Edge Function에 입력 검증·Turnstile·속도 제한·멱등성을 모으고, 질문과 상태 이력을 트랜잭션으로 처리했습니다. 브라우저의 직접 테이블 권한은 철회하고, 서버 역할의 요청에서 운영진 멤버십을 확인합니다.</p><p class="mini-flow">Browser <span aria-hidden="true">→</span> Edge Function <span aria-hidden="true">→</span> Transactional RPC</p><p class="note">실제 휴대전화·QR 경로를 검증하고, 행사 종료 후 신규 접수를 닫되 기존 답변 조회를 유지한 운영 경험입니다.</p><div class="evidence-links"><a data-evidence="nextbridge-submit" href="https://github.com/emotigom/nextbridge/blob/a52f3c1a97c1b6dc4560c575acfbfee472bffd8a/supabase/functions/submit-question/index.ts" target="_blank" rel="noopener noreferrer">질문 접수 API <span aria-hidden="true">↗</span></a> <a data-evidence="nextbridge-sql" href="https://github.com/emotigom/nextbridge/blob/a52f3c1a97c1b6dc4560c575acfbfee472bffd8a/supabase/migrations/20260816071856_harden_question_transactions.sql" target="_blank" rel="noopener noreferrer">트랜잭션 SQL <span aria-hidden="true">↗</span></a> <a data-evidence="nextbridge-security" href="https://github.com/emotigom/nextbridge/blob/a52f3c1a97c1b6dc4560c575acfbfee472bffd8a/docs/security.md" target="_blank" rel="noopener noreferrer">보안 설계 <span aria-hidden="true">↗</span></a></div></div></article>
+    <article class="work-row" aria-labelledby="gomdory-title"><div><p class="eyebrow">03 / Coding Prototype</p><h3 id="gomdory-title">Gomdory Play</h3><p class="work-meta">React · TypeScript · Acorn · Rapier</p></div><div><h4>학생 코드를 실행하지 않고, 허용된 명령으로 변환</h4><p>Acorn으로 학생 입력의 AST를 읽고, 허용한 구문만 <code>ThrowCommand</code>로 바꿔 3D 물리에 연결했습니다. <code>eval</code>이나 <code>Function</code>을 쓰지 않으며, 범용 JavaScript 실행 환경이 아닌 제한된 학습용 명령 해석기입니다.</p><p class="mini-flow">Student JS <span aria-hidden="true">→</span> AST allowlist <span aria-hidden="true">→</span> ThrowCommand <span aria-hidden="true">→</span> Physics</p><div class="evidence-links"><a data-evidence="gomdory-adr" href="https://github.com/emotigom/gomdory-play/blob/73b62be750564f89b510bb48a83f4e3a4205ad4c/docs/adr/0004-student-code-sandbox.md" target="_blank" rel="noopener noreferrer">설계 결정 ADR <span aria-hidden="true">↗</span></a> <a data-evidence="gomdory-parser" href="https://github.com/emotigom/gomdory-play/blob/73b62be750564f89b510bb48a83f4e3a4205ad4c/apps/play/src/game/studentCode.ts" target="_blank" rel="noopener noreferrer">입력 컴파일러 <span aria-hidden="true">↗</span></a> <a data-evidence="gomdory-tests" href="https://github.com/emotigom/gomdory-play/blob/73b62be750564f89b510bb48a83f4e3a4205ad4c/apps/play/src/game/studentCode.test.ts" target="_blank" rel="noopener noreferrer">허용·거부 테스트 <span aria-hidden="true">↗</span></a></div></div></article>
+    <article class="work-row compact-work" aria-labelledby="stress-title"><div><p class="eyebrow">04 / ML Validation</p><h3 id="stress-title">Stress Score<br> Prediction</h3><p class="work-meta">Python · scikit-learn · ExtraTrees</p></div><div><h4>리더보드와 별도로 검증 기준을 유지한 모델 실험</h4><p>3,000행·16개 입력 특성의 회귀 문제에서 OOF, secondary 검증, 독립 seed 테스트를 분리하고 실험 설정과 미채택 가설을 기록했습니다.</p><p class="metric-inline">Public MAE <strong>0.1271</strong><span>baseline 0.1283 대비 약 0.9% 개선</span></p><p class="note">비공개 저장소 · 제출 결과 요약. Public 점수를 일반화 성능으로 해석하지 않으며, 내부 실험을 이 공개 페이지에서 독립 검증할 수는 없습니다.</p></div></article>
+  </section>
 
-      <section class="section practice-section reveal" aria-labelledby="practice-title">
-        <div class="section-heading compact">
-          <p class="eyebrow">Development Practice</p>
-          <h2 id="practice-title">변경을 작게 나누고, 실제 동작을 증거로 남깁니다.</h2>
-        </div>
-        <div class="practice-grid">
-          <p><strong>Boundaries</strong><span>화면·API·DB·권한·실패 응답을 분리해 구현 범위를 명확히 합니다.</span></p>
-          <p><strong>Verification</strong><span>lint/type/unit/integration/E2E를 경계별로 적용하고 실제 production smoke까지 확인합니다.</span></p>
-          <p><strong>Release</strong><span>코드 병합과 production release를 구분하고 rollback 가능성을 확인합니다.</span></p>
-        </div>
-      </section>
+  <section id="background" class="background wrap section" aria-labelledby="background-title"><div class="section-intro"><p class="eyebrow">Relevant Background</p><h2 id="background-title">사용자의 제약을<br> 현장에서 배웠습니다.</h2><a class="text-link" href="./assets/Ahn_Sangkyoon_Resume_PythonBackend_Fullstack.pdf" target="_blank" rel="noopener noreferrer">전체 경력은 이력서에서 <span aria-hidden="true">↗</span></a></div><div class="background-rows"><div><p class="eyebrow">2020.07—현재</p><h3>50개+ 교육·기관 현장</h3><p>초·중·고·특수학교와 교육기관에서 SW·AI 교육을 진행하고, 반복되는 사용·운영 문제를 바탕으로 브라우저 기반 수업도구와 자료 배포 흐름을 만들었습니다.</p></div><div><p class="eyebrow">2011.03—2012.02</p><h3>KIST 시뮬레이션 연구</h3><p>전자재료 분야 계산 결과를 검토하고 연구 문제를 구조화한 경험을 현재의 데이터·제품 관점으로 연결합니다.</p></div></div></section>
 
-      <section id="contact" class="section contact-section reveal">
-        <div>
-          <p class="eyebrow">Contact</p>
-          <h2>Python Backend / Full-stack 역할을 찾고 있습니다.</h2>
-          <p>
-            Backend-heavy Full-stack, AI/Application Web, Healthcare·EdTech 서비스 개발 포지션에 관심이 있습니다.
-          </p>
-        </div>
-        <div class="contact-links">
-          <a href="mailto:ahnsangkyoon@gmail.com">
-            <span>Email</span>
-            <strong>ahnsangkyoon@gmail.com</strong>
-          </a>
-          <a href="https://github.com/emotigom" target="_blank" rel="noreferrer">
-            <span>GitHub</span>
-            <strong>github.com/emotigom ↗</strong>
-          </a>
-          <a href="https://hyeol.app/" target="_blank" rel="noreferrer">
-            <span>Flagship</span>
-            <strong>hyeol.app ↗</strong>
-          </a>
-        </div>
-      </section>
-    </main>
-
-    <footer class="footer">
-      <p>© <span id="year"></span> Ahn Sangkyoon. Portfolio content all rights reserved · Site code MIT licensed.</p>
-      <a href="#top">맨 위로 ↑</a>
-    </footer>
-  </body>
+  <section id="contact" class="contact wrap section" aria-labelledby="contact-title"><div><p class="eyebrow">Contact</p><h2 id="contact-title">Python Backend 역할을<br> 찾고 있습니다.</h2><p>백엔드 중심 풀스택, AI 응용 웹,<br> Healthcare·EdTech 서비스 개발에 관심이 있습니다.</p></div><div class="contact-links"><a href="mailto:ahnsangkyoon@gmail.com"><span>Email</span><strong>ahnsangkyoon@gmail.com <b aria-hidden="true">↗</b></strong></a><a href="https://github.com/emotigom" target="_blank" rel="noopener noreferrer"><span>GitHub</span><strong>github.com/emotigom <b aria-hidden="true">↗</b></strong></a><a href="./assets/Ahn_Sangkyoon_Resume_PythonBackend_Fullstack.pdf" target="_blank" rel="noopener noreferrer"><span>Resume</span><strong>이력서 PDF <b aria-hidden="true">↗</b></strong></a></div></section>
+</main>
+<footer class="footer wrap"><p>© <span id="year">2026</span> Ahn Sangkyoon<br> <span>Portfolio content all rights reserved · Site code MIT licensed.</span></p><a href="#top">맨 위로 <span aria-hidden="true">↑</span></a></footer>
+</body>
 </html>
