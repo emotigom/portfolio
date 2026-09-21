@@ -18,7 +18,7 @@ class SiteChecks(unittest.TestCase):
     def test_broken_anchor(self):
         self.mutate('href="#sk7"','href="#not-a-section"');self.assertIn('Broken internal anchor',self.errors())
     def test_duplicate_id(self):
-        self.mutate('id="work"','id="sk7"');self.assertIn('Duplicate id',self.errors())
+        self.mutate('id="stack"','id="sk7"');self.assertIn('Duplicate id',self.errors())
     def test_missing_pdf(self):
         (self.root/'assets/Ahn_Sangkyoon_Resume_PythonBackend_Fullstack.pdf').unlink();self.assertIn('Missing local asset',self.errors())
     def test_invalid_pdf(self):
