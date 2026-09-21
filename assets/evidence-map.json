@@ -1,0 +1,194 @@
+{
+  "version": 2,
+  "reviewed_on": "2026-09-21",
+  "portfolio_base": "dab9f7bb2c69deb3a25f4e837beace3148ff83bf",
+  "note": "Links pin reviewed source; historical execution evidence is not a current production status check.",
+  "evidence": {
+    "sk7-auth": {
+      "url": "https://github.com/AI-HealthCare-05/AH_05_07/blob/ccc66c165eefbdaec77e5bb0cad57b989f38e92c/app/dependencies/supabase_auth.py",
+      "repository": "AI-HealthCare-05/AH_05_07",
+      "revision": "ccc66c165eefbdaec77e5bb0cad57b989f38e92c",
+      "path": "app/dependencies/supabase_auth.py",
+      "level": "implementation",
+      "label": "Supabase 세션 검증",
+      "scope": "Supabase Auth /user 응답으로 신원을 확인. 독자 JWT 서명 검증 구현이라는 주장은 하지 않음.",
+      "verified_blob_sha": "976c2c0136918c5f905cd14f2f5121f9b4b062fa",
+      "verification": "GitHub connector read; source presence/blob identity. Not a new test execution."
+    },
+    "sk7-store": {
+      "url": "https://github.com/AI-HealthCare-05/AH_05_07/blob/ccc66c165eefbdaec77e5bb0cad57b989f38e92c/app/services/observation_store.py",
+      "repository": "AI-HealthCare-05/AH_05_07",
+      "revision": "ccc66c165eefbdaec77e5bb0cad57b989f38e92c",
+      "path": "app/services/observation_store.py",
+      "level": "implementation",
+      "label": "기록 저장 계층",
+      "scope": "호출자 토큰 전달 및 session.user_id 적용. 기록 API 경로에 한정.",
+      "verified_blob_sha": "dfb4195f49aeeb4c023993168215dde62afc0f6e",
+      "verification": "GitHub connector read; source presence/blob identity. Not a new test execution."
+    },
+    "sk7-store-tests": {
+      "url": "https://github.com/AI-HealthCare-05/AH_05_07/blob/ccc66c165eefbdaec77e5bb0cad57b989f38e92c/app/tests/test_observation_store.py",
+      "repository": "AI-HealthCare-05/AH_05_07",
+      "revision": "ccc66c165eefbdaec77e5bb0cad57b989f38e92c",
+      "path": "app/tests/test_observation_store.py",
+      "level": "mocked-test",
+      "label": "저장 계층 회귀 테스트",
+      "scope": "Mock HTTP 기반 코드. 이 포트폴리오 작업에서 SK7 테스트를 재실행하지 않음.",
+      "verified_blob_sha": "3569045d27dacd62aa19d710e7dbeabdc9b4b98c",
+      "verification": "GitHub connector read; source presence/blob identity. Not a new test execution."
+    },
+    "sk7-retention": {
+      "url": "https://github.com/AI-HealthCare-05/AH_05_07/blob/ccc66c165eefbdaec77e5bb0cad57b989f38e92c/supabase/migrations/20260903055923_enforce_exact_time_retention.sql",
+      "repository": "AI-HealthCare-05/AH_05_07",
+      "revision": "ccc66c165eefbdaec77e5bb0cad57b989f38e92c",
+      "path": "supabase/migrations/20260903055923_enforce_exact_time_retention.sql",
+      "level": "implementation",
+      "label": "30일 접근 경계 SQL",
+      "scope": "서버 만료시각, 변경 거부 및 RLS 접근 제한. 후속 migration과 함께 읽어야 함.",
+      "verified_blob_sha": "2ece18d21f6d94955546ab2c47e754e588dcc807",
+      "verification": "GitHub connector read; source presence/blob identity. Not a new test execution."
+    },
+    "sk7-expiry-record": {
+      "url": "https://github.com/AI-HealthCare-05/AH_05_07/blob/ccc66c165eefbdaec77e5bb0cad57b989f38e92c/docs/evidence/ac05-deployed-expiry-invisibility.md",
+      "repository": "AI-HealthCare-05/AH_05_07",
+      "revision": "ccc66c165eefbdaec77e5bb0cad57b989f38e92c",
+      "path": "docs/evidence/ac05-deployed-expiry-invisibility.md",
+      "level": "historical-production",
+      "label": "만료 행 검증 기록",
+      "scope": "2026-09-08 기록. 혈압 관찰 테이블의 합성 만료 검증. 자연 30일 관찰 또는 현재 전체 환경 검증 아님.",
+      "verified_blob_sha": "9a5aea00a8c3a990f4edf9a25035fc0eaa809b3b",
+      "verification": "GitHub connector read; source presence/blob identity. Not a new test execution."
+    },
+    "sk7-release": {
+      "url": "https://github.com/AI-HealthCare-05/AH_05_07/blob/ccc66c165eefbdaec77e5bb0cad57b989f38e92c/docs/evidence/o3-clean-release-execution.md",
+      "repository": "AI-HealthCare-05/AH_05_07",
+      "revision": "ccc66c165eefbdaec77e5bb0cad57b989f38e92c",
+      "path": "docs/evidence/o3-clean-release-execution.md",
+      "level": "historical-production",
+      "label": "API 배포·복구 검증 기록",
+      "scope": "2026-09-07 API-only. 이미지 digest, 0% traffic, activation/rollback/restore smoke. 현행 배포나 bit-identical build 보장 아님.",
+      "verified_blob_sha": "fbbbae9136c2d0b6e3486a3d9f87a49ce18cbd49",
+      "verification": "GitHub connector read; source presence/blob identity. Not a new test execution."
+    },
+    "sk7-account": {
+      "url": "https://github.com/AI-HealthCare-05/AH_05_07/blob/ccc66c165eefbdaec77e5bb0cad57b989f38e92c/app/apis/v1/account_routers.py",
+      "repository": "AI-HealthCare-05/AH_05_07",
+      "revision": "ccc66c165eefbdaec77e5bb0cad57b989f38e92c",
+      "path": "app/apis/v1/account_routers.py",
+      "level": "implementation",
+      "label": "호출자 한정 계정 삭제",
+      "scope": "세션의 user_id로 서버 전용 Auth Admin 호출. 실제 삭제·cascade 검증과 구분.",
+      "verified_blob_sha": "bad0d90cb713087e5ac41b29fa4ffa6899da4e58",
+      "verification": "GitHub connector read; source presence/blob identity. Not a new test execution."
+    },
+    "sk7-account-tests": {
+      "url": "https://github.com/AI-HealthCare-05/AH_05_07/blob/ccc66c165eefbdaec77e5bb0cad57b989f38e92c/web/e2e/account-removal.spec.ts",
+      "repository": "AI-HealthCare-05/AH_05_07",
+      "revision": "ccc66c165eefbdaec77e5bb0cad57b989f38e92c",
+      "path": "web/e2e/account-removal.spec.ts",
+      "level": "mocked-browser-test",
+      "label": "세션 경합 브라우저 테스트",
+      "scope": "합성 세션/mock API 기반 Playwright. 실제 Supabase 계정 삭제 증명 아님.",
+      "verified_blob_sha": "11aa72303c80cfa9668a0d25d30a17dcd29a604b",
+      "verification": "GitHub connector read; source presence/blob identity. Not a new test execution."
+    },
+    "sk7-model-contract": {
+      "url": "https://github.com/AI-HealthCare-05/AH_05_07/blob/ccc66c165eefbdaec77e5bb0cad57b989f38e92c/docs/model-v2-product-contract.md",
+      "repository": "AI-HealthCare-05/AH_05_07",
+      "revision": "ccc66c165eefbdaec77e5bb0cad57b989f38e92c",
+      "path": "docs/model-v2-product-contract.md",
+      "level": "contract",
+      "label": "모델 표시·개인정보 계약",
+      "scope": "기간 한정 브라우저 숫자 미리보기와 비진단성. 수치 전면 미표시라는 기존 이력서 문구를 대체.",
+      "verified_blob_sha": "0ff70f94a14f03b2ce23465ad9e712cfa81bba92",
+      "verification": "GitHub connector read; source presence/blob identity. Not a new test execution."
+    },
+    "nextbridge-submit": {
+      "url": "https://github.com/emotigom/nextbridge/blob/a52f3c1a97c1b6dc4560c575acfbfee472bffd8a/supabase/functions/submit-question/index.ts",
+      "repository": "emotigom/nextbridge",
+      "revision": "a52f3c1a97c1b6dc4560c575acfbfee472bffd8a",
+      "path": "supabase/functions/submit-question/index.ts",
+      "level": "implementation",
+      "label": "질문 접수 API",
+      "scope": "형식 검증, 멱등성, 속도 제한, Turnstile, active event 검사, RPC, 알림 경계.",
+      "verified_blob_sha": "b2545d532977fc936206c649115f3482ebedb73b",
+      "verification": "GitHub connector read; source presence/blob identity. Not a new test execution."
+    },
+    "nextbridge-sql": {
+      "url": "https://github.com/emotigom/nextbridge/blob/a52f3c1a97c1b6dc4560c575acfbfee472bffd8a/supabase/migrations/20260816071856_harden_question_transactions.sql",
+      "repository": "emotigom/nextbridge",
+      "revision": "a52f3c1a97c1b6dc4560c575acfbfee472bffd8a",
+      "path": "supabase/migrations/20260816071856_harden_question_transactions.sql",
+      "level": "implementation",
+      "label": "질문 트랜잭션 SQL",
+      "scope": "멱등성 unique index, 원자적 상태 이력, 운영진 권한 및 충돌 처리. 이번에 DB 재실행 안 함.",
+      "verified_blob_sha": "fe119ad3c0323c089115cae130caf3eb914f1517",
+      "verification": "GitHub connector read; source presence/blob identity. Not a new test execution."
+    },
+    "nextbridge-security": {
+      "url": "https://github.com/emotigom/nextbridge/blob/a52f3c1a97c1b6dc4560c575acfbfee472bffd8a/docs/security.md",
+      "repository": "emotigom/nextbridge",
+      "revision": "a52f3c1a97c1b6dc4560c575acfbfee472bffd8a",
+      "path": "docs/security.md",
+      "level": "design-document",
+      "label": "보안 설계",
+      "scope": "브라우저 직접 테이블 권한 철회, 서버 service-role 경계. SK7 caller-JWT 방식과 구분.",
+      "verified_blob_sha": "fbc5d60d982e1285fc162b2fe1fc14f8ae597a4a",
+      "verification": "GitHub connector read; source presence/blob identity. Not a new test execution."
+    },
+    "gomdory-adr": {
+      "url": "https://github.com/emotigom/gomdory-play/blob/73b62be750564f89b510bb48a83f4e3a4205ad4c/docs/adr/0004-student-code-sandbox.md",
+      "repository": "emotigom/gomdory-play",
+      "revision": "73b62be750564f89b510bb48a83f4e3a4205ad4c",
+      "path": "docs/adr/0004-student-code-sandbox.md",
+      "level": "design-document",
+      "label": "학생 입력 설계 결정",
+      "scope": "범용 JS sandbox가 아니라 네 가지 허용 AST 형태의 명령 변환.",
+      "verified_blob_sha": "48b126d5d3ec1cc86798f276c6e16db6ea4ec0eb",
+      "verification": "GitHub connector read; source presence/blob identity. Not a new test execution."
+    },
+    "gomdory-parser": {
+      "url": "https://github.com/emotigom/gomdory-play/blob/73b62be750564f89b510bb48a83f4e3a4205ad4c/apps/play/src/game/studentCode.ts",
+      "repository": "emotigom/gomdory-play",
+      "revision": "73b62be750564f89b510bb48a83f4e3a4205ad4c",
+      "path": "apps/play/src/game/studentCode.ts",
+      "level": "implementation",
+      "label": "입력 컴파일러",
+      "scope": "Acorn AST allowlist → ThrowCommand; eval/Function 실행 없음.",
+      "verified_blob_sha": "af1a0c5567437901b60e0fbfd36c19592e68a988",
+      "verification": "GitHub connector read; source presence/blob identity. Not a new test execution."
+    },
+    "gomdory-tests": {
+      "url": "https://github.com/emotigom/gomdory-play/blob/73b62be750564f89b510bb48a83f4e3a4205ad4c/apps/play/src/game/studentCode.test.ts",
+      "repository": "emotigom/gomdory-play",
+      "revision": "73b62be750564f89b510bb48a83f4e3a4205ad4c",
+      "path": "apps/play/src/game/studentCode.test.ts",
+      "level": "unit-test-source",
+      "label": "허용·거부 테스트",
+      "scope": "범위/문법/DOM·네트워크 접근 거부 테스트 코드. 이번 작업에서 원 프로젝트 테스트 재실행 안 함.",
+      "verified_blob_sha": "64e9366867cff8fb0ddd1e5c68f6ee24105c5b8f",
+      "verification": "GitHub connector read; source presence/blob identity. Not a new test execution."
+    },
+    "pr-account": {
+      "url": "https://github.com/AI-HealthCare-05/AH_05_07/pull/348",
+      "repository": "AI-HealthCare-05/AH_05_07",
+      "level": "contribution-history",
+      "label": "계정 삭제 구현",
+      "scope": "PR 작성·병합 기록. PR 설명은 변경 가능한 기록이며 단독 기여율 또는 실제 운영 검증을 보장하지 않음."
+    },
+    "pr-release": {
+      "url": "https://github.com/AI-HealthCare-05/AH_05_07/pull/263",
+      "repository": "AI-HealthCare-05/AH_05_07",
+      "level": "contribution-history",
+      "label": "배포 검증 기록",
+      "scope": "PR 작성·병합 기록. PR 설명은 변경 가능한 기록이며 단독 기여율 또는 실제 운영 검증을 보장하지 않음."
+    },
+    "pr-session-race": {
+      "url": "https://github.com/AI-HealthCare-05/AH_05_07/pull/368",
+      "repository": "AI-HealthCare-05/AH_05_07",
+      "level": "contribution-history",
+      "label": "오래된 삭제 완료의 세션 경합 수정",
+      "scope": "PR 작성·병합 기록. PR 설명은 변경 가능한 기록이며 단독 기여율 또는 실제 운영 검증을 보장하지 않음."
+    }
+  }
+}
