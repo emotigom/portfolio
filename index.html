@@ -402,6 +402,35 @@
             </dl>
             <p class="tech-line"><strong>Stack</strong> Java 21 · Spring Boot · Spring JDBC · PostgreSQL · Flyway · Testcontainers · Docker · Gradle</p>
           </article>
+
+          <article class="project-row reveal">
+            <div class="project-row-title">
+              <p class="project-index">06 · ML experiment lineage · Team hackathon</p>
+              <h3>Stress Score Prediction</h3>
+              <p class="project-summary">
+                3,000건의 건강·생활 정형 데이터에서 stress score를 예측한 3인 팀 해커톤 프로젝트입니다.
+                단일 leaderboard 점수보다 검증 계약과 모델 계보를 남기는 방식으로 실험을 정리했습니다.
+              </p>
+              <a class="text-link" href="https://github.com/thisisstress/stress_project_UNIFIED" target="_blank" rel="noopener noreferrer">
+                Team evidence repository <span aria-hidden="true">↗</span>
+              </a>
+            </div>
+            <dl class="project-facts">
+              <div>
+                <dt>Result</dt>
+                <dd>최종 ExtraTrees + Pair-Neighbor 모델이 Public MAE 0.12669, Private MAE 0.1473을 기록했습니다. Public 계보는 V1 0.12828 → V7 0.12723 → 최종 0.12669로 원 점수를 함께 공개합니다.</dd>
+              </div>
+              <div>
+                <dt>My contribution</dt>
+                <dd>실험 기록·저장소 운영, 대안 모델 연구와 튜닝을 담당했습니다. 가설 수립·검증·최종 모델 선정은 팀 협업으로 진행했습니다.</dd>
+              </div>
+              <div>
+                <dt>Validation discipline</dt>
+                <dd>Train-only 전처리와 검증 경계를 유지하고 외부 데이터를 사용하지 않았습니다. 서로 다른 split·seed·전처리 계약의 미세 MAE는 직접 순위화하지 않도록 별도 평가 기준을 문서화했습니다.</dd>
+              </div>
+            </dl>
+            <p class="tech-line"><strong>Stack</strong> Python · pandas · NumPy · scikit-learn · ExtraTrees · nearest-neighbor · Git/GitHub</p>
+          </article>
         </div>
       </section>
 
@@ -414,6 +443,10 @@
           <div>
             <dt>Backend</dt>
             <dd>Python · FastAPI · REST API · PostgreSQL · SQL · Supabase Auth/RLS · JWT · Spring Boot/JDBC</dd>
+          </div>
+          <div>
+            <dt>ML / Data</dt>
+            <dd>pandas · NumPy · scikit-learn · ExtraTrees · nearest-neighbor · MAE / OOF validation</dd>
           </div>
           <div>
             <dt>Frontend</dt>
