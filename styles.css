@@ -278,12 +278,14 @@ h4 {
 
 .section-heading { max-width: 910px; margin-bottom: 38px; }
 .section-heading.compact { max-width: 760px; }
+.lab-heading { margin-top: 72px; }
 
 .case-study {
   border-top: 1px solid var(--line-strong);
   border-bottom: 1px solid var(--line-strong);
   padding: 34px 0 38px;
 }
+.case-study + .case-study { margin-top: 48px; }
 .flagship { position: relative; }
 .flagship::before {
   content: "";
