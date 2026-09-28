@@ -70,8 +70,8 @@ production backend 개념을 problem → test → minimal implementation → ver
 - Final: ExtraTrees 76% + Pair-Neighbor 24%
 - Public MAE `0.1266866667` / Private MAE `0.1473`
 - Public lineage: V1 `0.1282776667` → V7 `0.1272333333` → Final `0.1266866667`
-- 기준 없는 “0.9% 향상” 대신 비교 기준과 원 점수를 함께 기록
-- 역할: 실험 기록·저장소 운영, 대안 모델 연구·튜닝 / 가설·검증·최종 선정은 팀 협업
+- 단일 퍼센트 향상 표현 대신 비교 기준과 원 점수를 함께 기록
+- 역할: 실험 기록·재현성 관리, 대안 모델 연구·튜닝 / 가설·검증·최종 선정은 팀 협업
 - Train-only validation boundary, no external data, score-interpretation guide
 - Evidence: https://github.com/thisisstress/stress_project_UNIFIED
 
