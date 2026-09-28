@@ -8,6 +8,7 @@
 - **Product & Field**: 초·중·고·특수학교 및 교육기관 50개+ 현장 경험을 제품 요구사항으로 연결
 - **Production**: Supabase Auth/RLS, Cloudflare Workers/Pages/R2, Google Cloud Run, GitHub Actions
 - **Quality & Operations**: Playwright, pytest, Vitest, Testcontainers, production smoke, rollback verification, runbook
+- **ML / Data**: pandas, NumPy, scikit-learn, ExtraTrees, nearest-neighbor, MAE / OOF validation
 
 ## Selected Projects
 
@@ -62,6 +63,17 @@ production backend 개념을 problem → test → minimal implementation → ver
 - Testcontainers 기반 실제 PostgreSQL 통합 테스트
 - idempotency uniqueness, concurrent race, PostgreSQL ON CONFLICT 기반 CREATED / REPLAYED / conflict semantics
 - Source: https://github.com/emotigom/backend-evidence-lab
+
+### Stress Score Prediction
+3,000건의 건강·생활 정형 데이터에서 `stress_score`를 예측한 3인 팀 해커톤 프로젝트입니다.
+
+- Final: ExtraTrees 76% + Pair-Neighbor 24%
+- Public MAE `0.1266866667` / Private MAE `0.1473`
+- Public lineage: V1 `0.1282776667` → V7 `0.1272333333` → Final `0.1266866667`
+- 기준 없는 “0.9% 향상” 대신 비교 기준과 원 점수를 함께 기록
+- 역할: 실험 기록·저장소 운영, 대안 모델 연구·튜닝 / 가설·검증·최종 선정은 팀 협업
+- Train-only validation boundary, no external data, score-interpretation guide
+- Evidence: https://github.com/thisisstress/stress_project_UNIFIED
 
 ## Background
 
