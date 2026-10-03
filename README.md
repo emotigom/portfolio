@@ -21,7 +21,7 @@
 - teacher boards, classroom sessions, Courseware runtime, student projects
 - 데이터 처리·보안·운영·복구 runbook을 코드와 함께 관리
 - Live: https://gomdory.com/
-- Source: https://github.com/emotigom/gom-clean
+- Source: https://github.com/emotigom/gomdory
 
 ### 2. SK7 · 상균7데이즈
 혈압 관찰값과 7일 생활습관 챌린지를 기록·조회·수정·회고하는 교육·연구 목적의 비진단형 웹 서비스입니다.
