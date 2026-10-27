@@ -35,7 +35,7 @@
 - Live: https://hyeol.app/
 - Source: https://github.com/AI-HealthCare-05/AH_05_07
 
-### 3. Nextbridge
+### 3. Gomdori
 교사 워크숍의 일정·협의실·현장 질문을 지원하고 행사 종료 상태까지 실제 운영한 웹앱입니다.
 
 - Astro / TypeScript / Supabase Edge Functions
