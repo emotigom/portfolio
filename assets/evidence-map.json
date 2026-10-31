@@ -104,8 +104,8 @@
       "verification": "GitHub connector read; source presence/blob identity. Not a new test execution."
     },
     "nextbridge-submit": {
-      "url": "https://github.com/emotigom/nextbridge/blob/a52f3c1a97c1b6dc4560c575acfbfee472bffd8a/supabase/functions/submit-question/index.ts",
-      "repository": "emotigom/nextbridge",
+      "url": "https://github.com/emotigom/gomdori-event-support/blob/a52f3c1a97c1b6dc4560c575acfbfee472bffd8a/supabase/functions/submit-question/index.ts",
+      "repository": "emotigom/gomdori-event-support",
       "revision": "a52f3c1a97c1b6dc4560c575acfbfee472bffd8a",
       "path": "supabase/functions/submit-question/index.ts",
       "level": "implementation",
@@ -115,8 +115,8 @@
       "verification": "GitHub connector read; source presence/blob identity. Not a new test execution."
     },
     "nextbridge-sql": {
-      "url": "https://github.com/emotigom/nextbridge/blob/a52f3c1a97c1b6dc4560c575acfbfee472bffd8a/supabase/migrations/20260816071856_harden_question_transactions.sql",
-      "repository": "emotigom/nextbridge",
+      "url": "https://github.com/emotigom/gomdori-event-support/blob/a52f3c1a97c1b6dc4560c575acfbfee472bffd8a/supabase/migrations/20260816071856_harden_question_transactions.sql",
+      "repository": "emotigom/gomdori-event-support",
       "revision": "a52f3c1a97c1b6dc4560c575acfbfee472bffd8a",
       "path": "supabase/migrations/20260816071856_harden_question_transactions.sql",
       "level": "implementation",
@@ -126,8 +126,8 @@
       "verification": "GitHub connector read; source presence/blob identity. Not a new test execution."
     },
     "nextbridge-security": {
-      "url": "https://github.com/emotigom/nextbridge/blob/a52f3c1a97c1b6dc4560c575acfbfee472bffd8a/docs/security.md",
-      "repository": "emotigom/nextbridge",
+      "url": "https://github.com/emotigom/gomdori-event-support/blob/a52f3c1a97c1b6dc4560c575acfbfee472bffd8a/docs/security.md",
+      "repository": "emotigom/gomdori-event-support",
       "revision": "a52f3c1a97c1b6dc4560c575acfbfee472bffd8a",
       "path": "docs/security.md",
       "level": "design-document",

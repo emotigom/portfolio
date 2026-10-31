@@ -1,8 +1,17 @@
 # Gomdori repository rename — deployment-safe cutover
 
-Status: **verification blocked** on 2026-10-31. The owner reports completing four GitHub repository renames, but the connected GitHub account still resolves the old slugs and returns 404 for all four new slugs. Do not treat this document or the reported rename as proof that the live site has moved.
+Status: **Four repository renames verified by stable IDs on 2026-10-31.** Continue checking live GitHub Pages and legacy QR route behavior separately.
 
 Tracking: [portfolio issue #13](https://github.com/emotigom/portfolio/issues/13).
+
+
+## Verified post-rename milestones (2026-10-31)
+
+- The four new repository URLs resolve under `emotigom` with the same stable repository IDs listed above.
+- [Event Support PR #66](https://github.com/emotigom/gomdori-event-support/pull/66) merged: Astro CI and Pages builds derive the project base from the current repo name; required PR CI succeeded. Confirm live route/QR separately.
+- [Pipeline PR #6](https://github.com/emotigom/gomdori-lesson-pipeline/pull/6) merged: trusted Factory checkout, state schemas, generators and pinned-SHA validation updated together, and required CI succeeded.
+- The Portfolio source URLs and three evidence-map source URLs are updated to the new repository path; original evidence keys, immutable commit SHAs and the verified blob SHAs stay unchanged.
+- No external Cloudflare Worker, DNS redirect, Supabase project identity, crypto namespace, or printed QR destination has been changed by the rename follow-up.
 
 ## Stable repository identities and intended new names
 
@@ -62,8 +71,8 @@ Do not delete historical Git commits, rewrite old evidence SHAs, revoke previous
 5. For local clones, run `git remote set-url origin https://github.com/emotigom/<new-name>.git` only after the new URL resolves.
 6. If a website fails, roll back the Pages deployment or route to the last known working origin. A GitHub repo rename rollback alone does not recover old GitHub Pages paths; keep a compatible legacy route.
 
-## Current read-only audit evidence (2026-10-31)
+## Historical audit before the final rename confirmation (2026-10-31)
 
 The connected GitHub API listed all four old repository names and returned 404 for all proposed new names. A lookup by stable repository IDs also returned the old names. No renames, external DNS changes, Cloudflare Worker migrations, Supabase writes or destructive changes were made by this audit.
 
-The next action is to **reconcile account/repository identity** before merging path or CI checkout changes. Continue to preserve Git evidence and the original printed QR routes.
+That discrepancy was resolved by the user completing the GitHub UI rename confirmation. The original repository IDs now resolve at the Gomdori slugs. Continue to preserve Git evidence and the original printed QR routes.
