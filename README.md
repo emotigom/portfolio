@@ -42,7 +42,7 @@
 - RLS, 역할별 권한, Turnstile 서버 검증, 원자적 rate limiting
 - GitHub Pages / Cloudflare 고정 QR 경로
 - 실제 휴대전화 종단 검증과 ready → published → archived 운영
-- Source: https://github.com/emotigom/nextbridge
+- Source: https://github.com/emotigom/gomdori-event-support
 
 ## Engineering Lab
 
